@@ -39,19 +39,27 @@ N = M
 $Q(N,M,T) = q(T)^{N}$                                                        ...equation (i)
 
 N ≤ M 
-$Q(N,M,T) = (M N) q(T)^{N}$                                                  ...equation(ii)
+$Q(N,M,T) = (M    N) q(T)^{N}$                                                  ...equation(ii)
 
 Where (M N) is a 2*1 matrix representing the number of possible ways that the N indistinguishable molecules can be distributed on the M distinguishable sites. Therefore taking the logarithmic function of the equation (ii) and ??? the matrix, we can have:
 
 $lnQ = MlnM - M - (NlnN - N) - [(M - N)ln(M - N)-(M - N)] + Nlnq$
 $lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq$                               ...equation(iii)
 
-Partion function and ln(Q)
-
 
 ### Configurational entropy of an ideal lattice gas
 
-Can we find an expression in terms of the fraction of occupied sites? 
+The total entropy has two contributions: $S = S_{config} + S_{vib}$. Which can be seen by combining the general entropy equation $S = U/T = klnQ$ to the previously derived equation (iii). 
+Hence, the combinatorial term will be: 
+
+$S_{config} = kln(M   N)$
+
+$S_{config} = k(MlnM - M - (NlnN - N) - [(M - N)ln(M - N) - (M - N)])$
+$S_{config} = l(MlnM - NlnN - (M - N)ln(M - N))$
+
+The interaction term will be:
+
+$S_{vib} = Nk(lnq + T(dlnq/dT)$
 
 ### Chemical potential
 
