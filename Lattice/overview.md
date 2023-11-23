@@ -90,6 +90,13 @@ $N_{11} = N - (N_{01}/2)$
 
 $(N_{11})w = (N - (N_{01}/2))w$
 
+If g(N,M,N_{01}) is the number of configurations with N_{01} pairs for a given (N,M), the Canonical partition function for the one dimensional lattice gas can be written as:
+
+$Q(N,M,T) = q^{N}Σg(N,M,N_{01})e^{-(N-N_{01}/2)w/kT}$
+$Q(N,M,T) = (qe^{-w/kT})^{N}Σg(N,M,N_{01})(e^{w/2kT)^{N_{01}$
+
+where the Σ is over all possible values of N_{01} for given (N,M). 
+
 ### Mixture
 
 A lattice fully populated with two types os species A and B. 
