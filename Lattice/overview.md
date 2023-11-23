@@ -23,6 +23,10 @@ IMPORTANT #2: Neighbors (especially nearest neieghbors = NN ) are important in l
 
 The ideal lattice gas model is a simplified representation of a gas system in statistical mechanics. It provides a theoretical framework for studying the behavior of non-interacting particles in a lattice structure. This model serves as a fundamental reference for understanding the properties of real gases under certain conditions.
 
+During the process of adsorption, the gas binds to the surface of the solid through various intermolecular interractions. If these are weak van der waals then physical adsorption is present, if these are strong covalent bonds then we have chemical adsorption. When building the adsorption model of an ideal lattice gas, we are gonna consider the surface of the lattice as having M sites, which will be occupied by N molecules. There are two assumptions that we are going to keep in mind:
+(i) The sites M are equivalent and independent 
+(ii) There is a maximum of one molecule bonded per site 
+
 Partion function and ln(Q)
 
 
