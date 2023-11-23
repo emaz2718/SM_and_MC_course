@@ -66,7 +66,10 @@ $S_{vib} = Nk(lnq + T(dlnq/dT)$
 
 ## Interacting Lattice Gas with Nearest-Neighbor Interactions
 
-In the context of statistical mechanics, an interacting lattice gas refers to a model where particles on a lattice experience interactions, specifically nearest-neighbor interactions. The energy associated with these interactions is denoted as $w$.
+In the context of statistical mechanics, an interacting lattice gas refers to a model where N particles adhered to M sites of a lattice experience interactions, specifically nearest-neighbor interactions. The energy associated with these interactions is denoted as $w$. The model is once again a one-dimensional lattice gas, so the criteria of equation (ii) can be applied, whereby N≤M. So, denoting the filled sites of the lattice as "1" and the empty sites as "0", for the following exemplary lattice surface adsorption:
+
+1 1 1 0 0 1 0 1 0 0 1 1 0 
+
 
 
 
