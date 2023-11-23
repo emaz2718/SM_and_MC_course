@@ -97,9 +97,23 @@ $Q(N,M,T) = (qe^{-w/kT})^{N}Σg(N,M,N_{01})(e^{w/2kT)^{N_{01}$
 
 where the Σ is over all possible values of N_{01} for given (N,M). 
 
-### Mixture
+### Lattice theory of solutions
 
-A lattice fully populated with two types os species A and B. 
+For a solution consisting of N_{A} and N_{B} molecules, the active sites of the lattice would be occupied as $M = N_{A} + N_{B}$. Considering the pair interactions w_{AA}, w_{AB} and w_{BB}, the Canonical partition function would then be written as:
+
+$Q(N_{A},N_{B},T) = q_{A}^{N_{A}}q_{B}^{N_{B}}Σg(N_{A},N_{AB},M)e^{-W/kT}$
+
+where the Σ is over all possible values of N_{AB}, and $W = N_{AA}w_{AA} + N_{AB}w_{AB} + N_{BB}w_{BB}$. We now define $w = w_{AA} + w_{BB} - 2W_{AB}$ and introduce:
+
+$cN_{A} = 2N_{AA} + N_{AB}$
+
+$cN_{B} = 2N_{BB} + N_{AB}$
+
+together with the expression $x = e^{w/2kT}$, we can get:
+
+$Q = (q_{A}e^{-cw_{AA}/2kT}^{N_A}(q_{B}e^{-cw_{BB}/2kT}^{N_B}Σgx^{N_{AB}}$
+
+where the Σ is over all possible values of N_{AB}
 
 ### Bragg-Williams approximation (Mean-field approximation)
 The Bragg-Williams approximation is a mean-field theory approach. It arises by randomly distributing the molecules over the sites (as if w=0) and then counting the average number of interaction, therefore the N_{11} terms. 
