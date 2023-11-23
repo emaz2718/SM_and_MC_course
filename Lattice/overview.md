@@ -33,6 +33,19 @@ $q(T) = q_{x} q_{y} q_{z} e^{-(U_{00}/kT)}$
 
 where q_{X}, q_{y}, and q_{z} are the 1-dimenional harmonic oscillator-type partition functions. Considering that during the process of adsorption the free gas is in equilibrium with the adsorbed molecules. The same zero-level energy for the molecules in the gas and adsorbed state must be present. Hence, let U=0 correspond to the gas molecule at rest for z→∞, then U_{OO} would be the energy at the minimum of U_{O}(x,y). Which would therefore be the potential energy of the adsorbed molecules at 0K, meaning that U_{OO}<0.
 
+Therefore for the two possible situations of :
+
+N = M
+$Q(N,M,T) = q(T)^{N}$                                                        ...equation (i)
+
+N ≤ M 
+$Q(N,M,T) = (M N) q(T)^{N}$                                                  ...equation(ii)
+
+Where (M N) is a 2*1 matrix representing the number of possible ways that the N indistinguishable molecules can be distributed on the M distinguishable sites. Therefore taking the logarithmic function of the equation (ii) and ??? the matrix, we can have:
+
+$lnQ = MlnM - M - (NlnN - N) - [(M - N)ln(M - N)-(M - N)] + Nlnq$
+$lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq$                               ...equation(iii)
+
 Partion function and ln(Q)
 
 
