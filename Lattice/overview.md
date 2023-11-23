@@ -70,6 +70,32 @@ In the context of statistical mechanics, an interacting lattice gas refers to a 
 
 1 1 1 0 0 1 0 1 0 0 1 1 0 
 
+We would have a total of 13 sites, M=13, occupied by 7 molecules, N=7. Additionally, we have the following nearest-neighbour interractions:
+
+![image](https://github.com/emaz2718/SM_and_MC_course/assets/151519476/c7ebbc20-d615-448f-a583-08fbaeda6626)
+
+Therefore, ignoring boundary effects in general we would then have:
+
+$2N = 2N_{11} + N_{01}$
+
+$2(M-N) = 2N_{00} + N_{01}$
+
+As can be noted, we have three unknown variables N_{11}, N_{00} and N_{01}. Therefore, making N_{01} an independent variable, we can derive the total interaction energy;
+
+$2N = 2N_{11} + N_{01}$
+
+$2N_{11} = 2N - N_{01}$
+
+$N_{11} = N - (N_{01}/2)$
+
+$(N_{11})w = (N - (N_{01}/2))w$
+
+
+
+
+
+
+
 
 
 
