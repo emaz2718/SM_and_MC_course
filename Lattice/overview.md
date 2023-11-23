@@ -61,7 +61,19 @@ The interaction term will be:
 
 $S_{vib} = Nk(lnq + T(dlnq/dT)$
 
-### Chemical potential
+### Chemical potential - applied to a pure substance
+The chemical potential gives an indication of how the Gibbs function changes as the composition of a mixture changes. For the compound "i" in a mixture, the chemical potential, also known as the partial molar Gibbs function, is:
+
+$U_{i} = (δG/δn_{i})_{p,T,n_{i}≠i}$
+
+Since a system would tend to decrease the Gibbs function as much as possible, the chemical potential would point to the direction where this can be achieved. 
+
+For a pure substance, the Gibbs free energy is given by:
+$G = n G_{m}$
+
+Where G_{m} is the molar free energy. Hence, the chemical potential for a pure substance would be:
+
+$U_{i} = (δG/δn_{i}) = (δnG_{m}/δn) = G_{m}$
 
 
 ## Interacting Lattice Gas with Nearest-Neighbor Interactions
@@ -93,7 +105,8 @@ $(N_{11})w = (N - (N_{01}/2))w$
 If g(N,M,N_{01}) is the number of configurations with N_{01} pairs for a given (N,M), the Canonical partition function for the one dimensional lattice gas can be written as:
 
 $Q(N,M,T) = q^{N}Σg(N,M,N_{01})e^{-(N-N_{01}/2)w/kT}$
-$Q(N,M,T) = (qe^{-w/kT})^{N}Σg(N,M,N_{01})(e^{w/2kT)^{N_{01}$
+
+$Q(N,M,T) = [(qe^{-w/kT})^{N}][Σg(N,M,N_{01})][(e^{w/2kT)^{N_{01}}]$
 
 where the Σ is over all possible values of N_{01} for given (N,M). 
 
@@ -111,7 +124,7 @@ $cN_{B} = 2N_{BB} + N_{AB}$
 
 together with the expression $x = e^{w/2kT}$, we can get:
 
-$Q = (q_{A}e^{-cw_{AA}/2kT}^{N_A}(q_{B}e^{-cw_{BB}/2kT}^{N_B}Σgx^{N_{AB}}$
+$Q = [q_{A}e^{-cw_{AA}/2kT}^{N_A}] [q_{B}e^{-cw_{BB}/2kT}^{N_B}] Σgx^{N_{AB}}$
 
 where the Σ is over all possible values of N_{AB}
 
@@ -129,6 +142,10 @@ Taking logarithyms of equation (iv) and substituting in equation (v):
 
 $lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq - cN^{2}w/2MkT$
 
+### References
+1) An intro to statistical thermodynamics - book
+2) https://chem.libretexts.org/Courses/Millersville_University/CHEM_341-_Physical_Chemistry_I/07%3A_Mixtures_and_Solutions/7.03%3A_Chemical_Potential
+3) http://staff.um.edu.mt/jgri1/teaching/che2372/notes/05/i_chem_pot.html
 
 
 
