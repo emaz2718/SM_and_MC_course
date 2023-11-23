@@ -27,6 +27,12 @@ During the process of adsorption, the gas binds to the surface of the solid thro
 (i) The sites M are equivalent and independent 
 (ii) There is a maximum of one molecule bonded per site 
 
+So, the partition function for an adsorbed molecule would then be:
+
+$q(T) = q_{x} q_{y} q_{z} e^{-(U_{00}/kT)}$
+
+where q_{X}, q_{y}, and q_{z} are the 1-dimenional harmonic oscillator-type partition functions. Considering that during the process of adsorption the free gas is in equilibrium with the adsorbed molecules. The same zero-level energy for the molecules in the gas and adsorbed state must be present. Hence, let U=0 correspond to the gas molecule at rest for z→∞, then U_{OO} would be the energy at the minimum of U_{O}(x,y). Which would therefore be the potential energy of the adsorbed molecules at 0K, meaning that U_{OO}<0.
+
 Partion function and ln(Q)
 
 
