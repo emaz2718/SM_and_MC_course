@@ -131,7 +131,7 @@ where the Σ is over all possible values of N_{AB}
 ### Bragg-Williams approximation (Mean-field approximation)
 The Bragg-Williams approximation is a mean-field theory approach. It arises by randomly distributing the molecules over the sites (as if w=0) and then counting the average number of interaction, therefore the N_{11} terms. 
 
-$Q(N,M,T) = (M  N) q^{N} e^{-N_{11-average}w/kT}                                 ....equation (iv)
+$Q(N,M,T) = (M  N) q^{N} e^{-N_{11-average}w/kT}$                                 ....equation (iv)
 
 Where N_{11-average} is the average number of 11 interractions and N_{11-average}w is the average interaction energy.
 For a lattice with c neighbour sites, the average occupied sites of a molecule would be $cθ = cN/M$. (Considering that $θ = N/M$). The average number of 11 interractions would then be:
