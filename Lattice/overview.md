@@ -142,6 +142,25 @@ Taking logarithyms of equation (iv) and substituting in equation (v):
 
 $lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq - cN^{2}w/2MkT$
 
+## Mixing
+
+From the Bragg-Wiliams approximation, we assume that the molecules are distributed randomly amongst the sites of the lattice, despite molecular interactions. If for a pure model of substance A the partition function is defined as:
+
+$Q(N_{A},T) = (q_{A}e^{-cw_{AA}/2kT}^N_{A})$
+
+$Q = (q_{A}e^{cw_{AA}/2kT}^{N_{A}}) (q_{B}e^{cw_{BB}/2kT}^{N_{B}}) [(N_{A}+(N_{B})!x^{N'_{AB}}/N_{A}!{N_{B}!]$
+
+From the Bragg-Williams partition function expression for mixtures, the following mixing properties can then be defined:
+
+$ΔA_{m}/MkT = x_{A}ln(x_{A})+x_{B}ln(x_{B})-(cw/2kT)x_{A}x_{B}$
+
+$ΔS_{m}/Mk = -x_{A}ln(x_{A})-x_{B}ln(x_{B})$
+
+$ΔE_{m}/MkT = -(cw/2kT)x_{A}x_{B}$
+
+Looking at the relationship between the energy of mixing E and w, if w is negative, the energy would be positive. Such a case would occur when AA and BB would be more stable than AB. 
+
+
 ### References
 1) An intro to statistical thermodynamics - book
 2) https://chem.libretexts.org/Courses/Millersville_University/CHEM_341-_Physical_Chemistry_I/07%3A_Mixtures_and_Solutions/7.03%3A_Chemical_Potential
