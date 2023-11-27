@@ -146,7 +146,7 @@ $lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq - cN^{2}w/2MkT$
 
 From the Bragg-Wiliams approximation, we assume that the molecules are distributed randomly amongst the sites of the lattice, despite molecular interactions. If for a pure model of substance A the partition function is defined as:
 
-$Q(N_{A},T) = (q_{A}e^{-cw_{AA}/2kT}^N_{A})$
+$Q(N_{A},T) = (q_{A}(e^{-cw_{AA}/2kT})^{N_{A}})$
 
 For a mixture of A and B randomly occupying the sites of lattice, the partition function expression then becomes:
 
