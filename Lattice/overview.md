@@ -160,7 +160,7 @@ $ΔS_{m}/Mk = -x_{A}ln(x_{A})-x_{B}ln(x_{B})$
 
 $ΔE_{m}/MkT = -(cw/2kT)x_{A}x_{B}$
 
-Looking at the relationship between the energy of mixing E and w, if w is negative, the energy would be positive. Such a case would occur when AA and BB would be more stable than AB. 
+Looking at the relationship between the energy of mixing E and w, if w is negative, the energy would be positive. As noted previously wherby we defined $w = w_{AA} + w_{BB} - 2W_{AB}$. When the overall w is negative, therefore w_{AA} + w_{BB} < 2W_{AB}. Meaning that the pairs AA and BB would be more stable than AB. 
 
 
 ### References
