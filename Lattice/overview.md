@@ -148,7 +148,9 @@ From the Bragg-Wiliams approximation, we assume that the molecules are distribut
 
 $Q(N_{A},T) = (q_{A}e^{-cw_{AA}/2kT}^N_{A})$
 
-$Q = (q_{A}e^{cw_{AA}/2kT}^{N_{A}}) (q_{B}e^{cw_{BB}/2kT}^{N_{B}}) [(N_{A}+(N_{B})!x^{N'_{AB}}/N_{A}!{N_{B}!]$
+For a mixture of A and B randomly occupying the sites of lattice, the partition function expression then becomes:
+
+$Q = (q_{A}e^{cw_{AA}/2kT}^{N_{A}})*(q_{B}e^{cw_{BB}/2kT}^{N_{B}})*[(N_{A}+(N_{B})!x^{N'_{AB}}/N_{A}!{N_{B}!]$
 
 From the Bragg-Williams partition function expression for mixtures, the following mixing properties can then be defined:
 
