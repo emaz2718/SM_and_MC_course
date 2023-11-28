@@ -144,7 +144,54 @@ $lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq - cN^{2}w/2MkT$
 
 ## Mixing
 
-From the Bragg-Wiliams approximation, we assume that the molecules are distributed randomly amongst the sites of the lattice, despite molecular interactions. If for a pure model of substance A the partition function is defined as:
+For a lattice solution of components A and B, the three possible interactions at the lattice sites are AA, BB and AB. Therefore, the total energy of the system would then correspond to these three types of interractions:
+
+$U = m_{AA}w_{AA} + m_{BB}w_{BB} + m_{AB}w_{AB}$
+
+Where m correspond to the number of bonds and w is the contact energy. Instead of expressing the values in terms of m, (which are typically not known), N can be used, corresponding to the number of atoms present. The relationship between the two, for an A particle in contact being:
+
+$zN_{A} = 2m_{AA} + m_{AB}$
+
+(For a homogeneous interraction, there are two of the same points of contact for the A particle in question, and 1 point of contact for an AB bond.)
+
+Similarly for a B particle:
+
+$zN_{B} = 2m_{BB} + m_{AB}$
+
+Therefore, solving the two equations for the m values:
+
+$m_{AA} = (zN_{A} - m_{AB})/2$ 
+$m_{BB} = (zN_{B} - m_{AB})/2$ 
+
+Substituting this into the equation for the total energy, we get:
+
+$U = ((zN_{A} - m_{AB})/2)w_{AA} + ((zN_{B} - m_{AB})/2)w_{BB} + m_{AB}w_{AB}$
+
+$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (W{AA}+w{BB}/2))m_{AB}$
+
+Now, using the Bragg-Wiliams approximation we may solve for m_{AB}. Generally, different arrangements of the system's particles will influence the outcome of m_{AB}. However, by assuming that the molecules are distributed randomly and uniformly amongst the sites of the lattice, we can carry out a mean filed approximation and estimate m_{AB}. 
+
+Considering a random site, the probability that it is occuped by a B molecule is:
+
+$p_{B} = N_{B}/N = x_{B} = 1-x$
+
+There are z nearest neighbour sites for each molecule of A, therefore, the average number of AB contacts made by that particular molecule of A is zN_{B}/N = z(1-x).
+
+So, $m_{AB} ≈ zN_{A}N_{B}/N = zNx(1-x)$
+
+Having an expression for m_{AB}, we can now determine the total energy U.
+
+$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (W{AA}+w{BB}/2))m_{AB}$
+
+$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (W{AA}+w{BB}/2))*(zN_{A}N_{B}/N)$
+
+$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (kTχ_{AB})*(N_{A}N_{B}/N)$
+
+Whereby χ_{AB} is a dimensionless quantity known as the exchange parameter:
+
+$χ_{AB} = z/kT(w_{AB} - (W{AA}+w{BB}/2))$
+
+Alternatively, from the Bragg-Wiliams approximation, we can also derive properties for mixing through the partition function. If for a pure model of substance A the partition function is defined as:
 
 $Q(N_{A},T) = (q_{A}(e^{-cw_{AA}/2kT})^{N_{A}})$
 
