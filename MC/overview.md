@@ -50,15 +50,27 @@ This condition ensures that the system, when in equilibrium, does not favor tran
 
 ### Detailed Balance in Monte Carlo Simulations
 
-In Monte Carlo simulations, detailed balance is crucial for the proper sampling of the configuration space. On "deriving" the Metropolis scheme to determine the transition proability π(o → n), one would go from the configuration of o to n. Hence, the simulation would generate a sequence of states by proposing moves, which may either be accepted or rejected. If accepted, a change from the o to the n state would take place. Otherwise, the n state would be rejected and the simulation would return back to the n state. During this process, the  matrix elements π(o → n) must satisfy one condition, that they do not destroy the equilibrium distribution once it is reached. Meaning that an equilibrium would be present, whereby the average number of accepted trial moves from o to n would be equal to the number of reverse moves from n to o, in doing so preserving the equilibrium distribution. This would be done through the detailed balance, which would ensure that these moves are accepted or rejected in a way that conserves the equilibrium distribution. Implying that:
+In Monte Carlo simulations, detailed balance is crucial for the proper sampling of the configuration space. On "deriving" the Metropolis scheme to determine the transition proability π(o → n), one would go from the configuration of o to n. Hence, the simulation would generate a sequence of states by proposing moves, which may either be accepted or rejected. 
+
+If accepted, a change from the o to the n state would take place. Otherwise, the n state would be rejected and the simulation would return back to the n state. During this process, the  matrix elements π(o → n) must satisfy one condition, that they do not destroy the equilibrium distribution once it is reached. Meaning that an equilibrium would be present, whereby the average number of accepted trial moves from o to n would be equal to the number of reverse moves from n to o, in doing so preserving the equilibrium distribution. This would be done through the detailed balance, which would ensure that these moves are accepted or rejected in a way that conserves the equilibrium distribution. 
+Implying that:
 
 $N(o)π(o → n) = N(n)π(n → o)$
 
-The probability of accepting a move from state $o$ to state $n$ ($A_{on}$) is given by:
+Where N(o) and N(n) are the pobabilities of finding the system in the respective configuration o and n. π(o → n) and π(n → o) are the transition probabilities. 
 
-$$
-A_{on} = \min\left(1, \frac{P_n}{P_o} \cdot \frac{T_{no}}{T_{on}}\right)
-$$
+Therefore, the Monte Carlo consists of two stages:
+
+1) A trial move is generated from state o to state n. Whereby the transition matrix that determines the transition probability for π(o → n) would be α(o → n).
+2) A decision is then made to either accept or reject the trial move. The probability of accepting the trial  move being:
+
+$π(o → n) = α(o → n) . acc(o → n)$
+
+Therefore:
+
+$acc(o → n) = π(o → n)/α(o → n)$
+
+$acc(o → n) = N(n)π(n → o)/N(o)α(o → n)$
 
 This formula ensures that, on average, transitions from $o$ to $n$ are as likely as transitions from $n$ to $o$, satisfying the detailed balance condition.
 
