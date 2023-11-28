@@ -50,15 +50,17 @@ This condition ensures that the system, when in equilibrium, does not favor tran
 
 ### Detailed Balance in Monte Carlo Simulations
 
-In Monte Carlo simulations, detailed balance is crucial for the proper sampling of the configuration space. The simulation generates a sequence of states by proposing moves, and detailed balance ensures that these moves are accepted or rejected in a way that preserves the equilibrium distribution.
+In Monte Carlo simulations, detailed balance is crucial for the proper sampling of the configuration space. On "deriving" the Metropolis scheme to determine the transition proability π(o → n), one would go from the configuration of o to n. Hence, the simulation would generate a sequence of states by proposing moves, which may either be accepted or rejected. If accepted, a change from the o to the n state would take place. Otherwise, the n state would be rejected and the simulation would return back to the n state. During this process, the  matrix elements π(o → n) must satisfy one condition, that they do not destroy the equilibrium distribution once it is reached. Meaning that an equilibrium would be present, whereby the average number of accepted trial moves from o to n would be equal to the number of reverse moves from n to o, in doing so preserving the equilibrium distribution. This would be done through the detailed balance, which would ensure that these moves are accepted or rejected in a way that conserves the equilibrium distribution. Implying that:
 
-In the context of a Metropolis-Hastings Monte Carlo algorithm, which is widely used, detailed balance is implemented through an acceptance probability. The probability of accepting a move from state $i$ to state $j$ ($A_{ij}$) is given by:
+$N(o)π(o → n) = N(n)π(n → o)$
+
+The probability of accepting a move from state $o$ to state $n$ ($A_{on}$) is given by:
 
 $$
-A_{ij} = \min\left(1, \frac{P_j}{P_i} \cdot \frac{T_{ji}}{T_{ij}}\right)
+A_{on} = \min\left(1, \frac{P_n}{P_o} \cdot \frac{T_{no}}{T_{on}}\right)
 $$
 
-This formula ensures that, on average, transitions from $i$ to $j$ are as likely as transitions from $j$ to $i$, satisfying the detailed balance condition.
+This formula ensures that, on average, transitions from $o$ to $n$ are as likely as transitions from $n$ to $o$, satisfying the detailed balance condition.
 
 ### Ensuring Convergence
 
