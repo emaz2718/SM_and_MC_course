@@ -48,6 +48,16 @@ Here:
 
 This condition ensures that the system, when in equilibrium, does not favor transitions in one direction over the reverse.
 
+Alternatively it may be written as:
+
+$N(o)π(o → n) = N(n)π(n → o)$
+
+where:
+N(o) is the probability of being in the state o
+N(n) is the probability of being in the state n
+π(o → n) is the probability of the o to n transition
+π(n → o) is the probability of the n to o transition
+
 ### Detailed Balance in Monte Carlo Simulations
 
 In Monte Carlo simulations, detailed balance is crucial for the proper sampling of the configuration space. On "deriving" the Metropolis scheme to determine the transition proability π(o → n), one would go from the configuration of o to n. Hence, the simulation would generate a sequence of states by proposing moves, which may either be accepted or rejected. 
