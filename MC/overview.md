@@ -36,27 +36,19 @@ Detailed balance is a fundamental concept in Monte Carlo simulations, ensuring t
 
 Mathematically, the detailed balance condition is expressed as follows:
 
-$$
-P_i \cdot T_{ij} = P_j \cdot T_{ji}
-$$
-
-Here:
-- $P_i$ is the probability of being in state $i$,
-- $P_j$ is the probability of being in state $j$,
-- $T_{ij}$ is the transition probability from state $i$ to state $j$,
-- $T_{ji}$ is the transition probability from state $j$ to state $i$.
-
-This condition ensures that the system, when in equilibrium, does not favor transitions in one direction over the reverse.
-
-Alternatively it may be written as:
-
 $N(o)π(o → n) = N(n)π(n → o)$
 
 where:
-N(o) is the probability of being in the state o
-N(n) is the probability of being in the state n
-π(o → n) is the probability of the o to n transition
-π(n → o) is the probability of the n to o transition
+
+-N(o) is the probability of being in the state o
+
+-N(n) is the probability of being in the state n
+
+-π(o → n) is the probability of the o to n transition
+
+-π(n → o) is the probability of the n to o transition
+
+This condition ensures that the system, when in equilibrium, does not favor transitions in one direction over the reverse.
 
 ### Detailed Balance in Monte Carlo Simulations
 
@@ -71,7 +63,7 @@ Where N(o) and N(n) are the pobabilities of finding the system in the respective
 
 Therefore, the Monte Carlo consists of two stages:
 
-1) A trial move is generated from state o to state n. Whereby the transition matrix that determines the transition probability for π(o → n) would be α(o → n).
+1) A trial move is generated from state o to state n. Whereby the transition propagation element α determines the transition probability for π(o → n) would be α(o → n).
 2) A decision is then made to either accept or reject the trial move. The probability of accepting the trial  move being:
 
 $π(o → n) = α(o → n) . acc(o → n)$
@@ -83,6 +75,7 @@ $acc(o → n) = π(o → n)/α(o → n)$
 $acc(o → n) = N(n)π(n → o)/N(o)α(o → n)$
 
 This formula ensures that, on average, transitions from $o$ to $n$ are as likely as transitions from $n$ to $o$, satisfying the detailed balance condition.
+
 
 ### Ensuring Convergence
 
@@ -120,6 +113,10 @@ In practice, the Metropolis Monte Carlo simulation technique involves the follow
 5. Record/save the current configuration into a data-base. *Note that the same configurations can be added twice or more when we reject proposed configurations. This is a key-point of the approach, low energy configuration shall be mre predominant in our data-base.* 
 
 6. Repeat steps 2-4 for a large number $N$ of iterations , allowing the simulation to explore the configuration space of the system.
+
+![image](https://github.com/emaz2718/SM_and_MC_course/assets/151519476/6b955a09-4970-4e31-9814-18f85313e83f)
+
+
 
 From the data-base generated in this procedure, we can calculate thermodynamic properties of the system, such as the heat capacity and free energy. In order to do so we simply take the average of the property calculated using all configurations in our data-base. For example the internal energy, $<U>$, can be calculated as follows:
 
