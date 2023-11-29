@@ -41,7 +41,11 @@ $Q(N,M,T) = q(T)^{N}$                                                        ...
 N ≤ M 
 $Q(N,M,T) = (M    N) q(T)^{N}$                                                ...equation(ii)
 
-Where (M N) is a 2*1 matrix representing the number of possible ways that the N indistinguishable molecules can be distributed on the M distinguishable sites. Therefore taking the logarithmic function of the equation (ii) we can have:
+Where (M N) is a binomial coefficient, representing the number of possible ways that the N indistinguishable molecules can be distributed on the M distinguishable sites. The relationship of which may be expressed as:
+
+$(M  N) = (M!/N!(M-N)!$
+
+Therefore through the stirling approximation we can then have:
 
 $lnQ = MlnM - M - (NlnN - N) - [(M - N)ln(M - N)-(M - N)] + Nlnq$
 $lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq$                               ...equation(iii)
