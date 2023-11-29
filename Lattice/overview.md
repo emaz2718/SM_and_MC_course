@@ -43,7 +43,7 @@ $Q(N,M,T) = (M    N) q(T)^{N}$                                                ..
 
 Where (M N) is a binomial coefficient, representing the number of possible ways that the N indistinguishable molecules can be distributed on the M distinguishable sites. The relationship of which may be expressed as:
 
-$(M  N) = (M!/N!(M-N)!)$
+$(M  N) = M!/[N!(M-N)!]$
 
 Therefore through the stirling approximation we can then have:
 
