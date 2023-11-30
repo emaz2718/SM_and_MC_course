@@ -74,7 +74,7 @@ $acc(o → n) = π(o → n)/α(o → n)$
 
 $acc(o → n) = N(n)π(n → o)/N(o)α(o → n)$
 
-This formula ensures that, on average, transitions from $o$ to $n$ are as likely as transitions from $n$ to $o$, satisfying the detailed balance condition.
+This formula ensures that, on average, transitions from $o$ to $n$ are as likely as transitions from $n$ to $o$, satisfying the detailed balance condition. In order to decide if a trial move is accepted or rejected, a random number is generated (Ranf). The probability that it is less acc(o → n) is equal to acc(o → n). The trial move is accepted if Ranf < acc(o → n).
 
 Taking α to be symmetric, meaning that there would be equal probability for the (o → n) and (n → o) transitions, we can then assume:
 
@@ -91,6 +91,8 @@ $π(o → n) = α(o → n)$
 Hence we can replace $α(o → n)$ as $π(o → n)$
 
 $acc(o → n) = N(n)π(n → o)/N(o)π(o → n)$
+
+Finally, apart from the need for α to be symmetric, a second condition exists that π(o → n) must satisfy. This is that the process must be ergodic, meaning that on going from o → n a consistency must be present.  Independent of how the o state is achieved, for that step, it must be the only outcome.
 
 ### Ensuring Convergence
 
