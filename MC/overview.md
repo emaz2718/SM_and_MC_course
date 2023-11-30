@@ -76,6 +76,21 @@ $acc(o → n) = N(n)π(n → o)/N(o)α(o → n)$
 
 This formula ensures that, on average, transitions from $o$ to $n$ are as likely as transitions from $n$ to $o$, satisfying the detailed balance condition.
 
+Taking α to be symmetric, meaning that there would be equal probability for the (o → n) and (n → o) transitions, we can then assume:
+
+$N(o). acc(o → n) = N(n).acc(n → o)$
+
+Assuming that if N(n)≥N(o) as the n state is more stable than the o, the acc(o → n) would be equal to 1. Therefor the acc(n → o) may then be found as:
+
+$acc(n → o) = N(o)/N(n)$
+
+Additionally:
+
+$π(o → n) = α(o → n)$
+
+Hence we can replace $α(o → n)$ as $π(o → n)$
+
+$acc(o → n) = N(n)π(n → o)/N(o)π(o → n)$
 
 ### Ensuring Convergence
 
