@@ -122,9 +122,9 @@ $Q(N_{A},N_{B},T) = q_{A}^{N_{A}}q_{B}^{N_{B}}Σg(N_{A},N_{AB},M)e^{-W/kT}$
 
 where the Σ is over all possible values of N_{AB}, and $W = N_{AA}w_{AA} + N_{AB}w_{AB} + N_{BB}w_{BB}$. We now define $w = w_{AA} + w_{BB} - 2W_{AB}$ and introduce:
 
-$cN_{A} = 2N_{AA} + N_{AB}$
+$zN_{A} = 2N_{AA} + N_{AB}$
 
-$cN_{B} = 2N_{BB} + N_{AB}$
+$zN_{B} = 2N_{BB} + N_{AB}$
 
 together with the expression $x = e^{w/2kT}$, we can get:
 
@@ -150,7 +150,7 @@ $lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq - cN^{2}w/2MkT$
 
 For a lattice solution of components A and B, the three possible interactions at the lattice sites are AA, BB and AB. Therefore, the total energy of the system would then correspond to these three types of interractions:
 
-$U = m_{AA}w_{AA} + m_{BB}w_{BB} + m_{AB}w_{AB}$
+$ΔE_{m} = m_{AA}w_{AA} + m_{BB}w_{BB} + m_{AB}w_{AB}$
 
 Where m correspond to the number of bonds and w is the contact energy. Instead of expressing the values in terms of m, (which are typically not known), N can be used, corresponding to the number of atoms present. The relationship between the two, for an A particle in contact being:
 
@@ -169,9 +169,9 @@ $m_{BB} = (zN_{B} - m_{AB})/2$
 
 Substituting this into the equation for the total energy, we get:
 
-$U = ((zN_{A} - m_{AB})/2)w_{AA} + ((zN_{B} - m_{AB})/2)w_{BB} + m_{AB}w_{AB}$
+$ΔE_{m} = ((zN_{A} - m_{AB})/2)w_{AA} + ((zN_{B} - m_{AB})/2)w_{BB} + m_{AB}w_{AB}$
 
-$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (W{AA}+w{BB}/2))m_{AB}$
+$ΔE_{m} = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (W{AA}+w{BB}/2))m_{AB}$
 
 Now, using the Bragg-Wiliams approximation we may solve for m_{AB}. Generally, different arrangements of the system's particles will influence the outcome of m_{AB}. However, by assuming that the molecules are distributed randomly and uniformly amongst the sites of the lattice, we can carry out a mean filed approximation and estimate m_{AB}. 
 
@@ -185,15 +185,43 @@ So, $m_{AB} ≈ zN_{A}N_{B}/N = zNx(1-x)$
 
 Having an expression for m_{AB}, we can now determine the total energy U.
 
-$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (W{AA}+w{BB}/2))m_{AB}$
+$ΔE_{m} = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (w{AA}+w{BB}/2))m_{AB}$
 
-$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (W{AA}+w{BB}/2))*(zN_{A}N_{B}/N)$
+$ΔE_{m} = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (w{AA}+w{BB}/2))*(zN_{A}N_{B}/N)$
 
-$U = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (kTχ_{AB})*(N_{A}N_{B}/N)$
+$ΔE_{m} = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (kTχ_{AB})*(N_{A}N_{B}/N)$
 
 Whereby χ_{AB} is a dimensionless quantity known as the exchange parameter:
 
-$χ_{AB} = z/kT(w_{AB} - (W{AA}+w{BB}/2))$
+$χ_{AB} = z/kT(w_{AB} - (w{AA}+w{BB}/2))$
+
+We can then simplify the equation for the mixing energy:
+
+$ΔE_{m} = ((zw_{AA}/2)N_{A}) + ((zw_{BB}/2)N_{B}) + (w_{AB} - (w{AA}+w{BB}/2))*(zN_{A}N_{B}/N)$
+
+$ΔE_{m} = z((w_{AA}/2)N_{A}) + ((w_{BB}/2)N_{B}) + (w_{AB} - (w{AA}+w{BB}/2))*(N_{A}N_{B}/N)$
+
+$w = w_{AA} + w_{BB} -2w_{AB}$
+
+$w + 2w_{AB} = w_{AA} + w_{BB}$
+
+$ΔE_{m} = z((w_{AA}/2)N_{A}) + ((w_{BB}/2)N_{B}) + (w_{AB} - (w + 2w_{AB} /2))*(N_{A}N_{B}/N)$
+
+$ΔE_{m} = z((w_{AA}/2)N_{A}) + ((w_{BB}/2)N_{B}) + (2w_{AB} - w - 2w_{AB} /2))*(N_{A}N_{B}/N)$
+
+$ΔE_{m} = z((w_{AA}/2)N_{A}) + ((w_{BB}/2)N_{B}) + (- w /2))*(N_{A}N_{B}/N)$
+
+$ΔE_{m} = z/2 * (w_{AA}N_{A}) + (w_{BB}N_{B}) - w (N_{A}N_{B}/N)$
+
+$ΔE_{m}/N = z/2 * (w_{AA}x_{A}) + (w_{BB}x_{B}) - w (x_{A}x_{B})$
+
+When the overall w is negative, therefore w_{AA} + w_{BB} < 2W_{AB}. Assuming that heterogeneous interactions are preferred over homogeneous ones, hence AA and BB interractions are negligible:
+
+$ΔE_{m}/N = z/2 * (-w (x_{A}x_{B})$
+
+$ΔE_{m}/NkT = z/2kT * (-w (x_{A}x_{B})$
+
+$ΔE_{m}/NkT = -(zw/2kT)x_{A}x_{B}$
 
 Alternatively, from the Bragg-Wiliams approximation, we can also derive properties for mixing through the partition function. If for a pure model of substance A the partition function is defined as:
 
@@ -205,11 +233,11 @@ $Q = (q_{A}e^{cw_{AA}/2kT}^{N_{A}})*(q_{B}e^{cw_{BB}/2kT}^{N_{B}})*[(N_{A}+(N_{B
 
 From the Bragg-Williams partition function expression for mixtures, the following mixing properties can then be defined:
 
-$ΔA_{m}/MkT = x_{A}ln(x_{A})+x_{B}ln(x_{B})-(cw/2kT)x_{A}x_{B}$
+$ΔA_{m}/NkT = x_{A}ln(x_{A})+x_{B}ln(x_{B})-(zw/2kT)x_{A}x_{B}$
 
-$ΔS_{m}/Mk = -x_{A}ln(x_{A})-x_{B}ln(x_{B})$
+$ΔS_{m}/Nk = -x_{A}ln(x_{A})-x_{B}ln(x_{B})$
 
-$ΔE_{m}/MkT = -(cw/2kT)x_{A}x_{B}$
+$ΔE_{m}/NkT = -(zw/2kT)x_{A}x_{B}$
 
 Looking at the relationship between the energy of mixing E and w, if w is negative, the energy would be positive. As noted previously wherby we defined $w = w_{AA} + w_{BB} - 2W_{AB}$. When the overall w is negative, therefore w_{AA} + w_{BB} < 2W_{AB}. Meaning that the pairs AA and BB would be more stable than AB. 
 
