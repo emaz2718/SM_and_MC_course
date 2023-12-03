@@ -3,6 +3,14 @@ Coagulated aerosols are aggregates of solid particles, distinguished by their wi
 
 The generated model is based on the Eden model, whose initial state starts from a seed particle at the origin of a lattice. A second particle is then added randomly at a large distance from the origin. A random walk ensues by the second particle, until it visits a site adjacent to the seed, becoming a cluster. This is then repeated with other particles, consistently growing the aggregate. If a particle comes into contact with the boundaries of the lattce in its random walk, it is removed. 
 
+![image](https://github.com/emaz2718/SM_and_MC_course/assets/151519476/d3693459-8c80-4a64-9697-1262d41b9e20)
+
+Information about the particle distribution is then obtained from the density correlation function. The density is defined to be 1 for occupied sites and 0 otherwise. By measuring the correlation funcion, which would be dependent on the density and the distance between two sites:
+
+$C(r)≡N^{-1}∑ρ(r')ρ(r'+r)$
+
+
+
 ## The Eden Model
 This is the simplest model for the formation of aggregates. It describes how particles are added randomly one at a time to sites adjacent to the occupied sites. This process produces a compact cluster whose density correlations are independent of distance in the limit of large sizes. However, the metal aggregates were reported to have correlations that fall off as a fractional power of distance. 
 
