@@ -157,7 +157,7 @@ $$
 
 ### Tutorial
 
-<a target="_blank" href="https://colab.research.google.com/github/jollactic/Modelling_course/blob/main/CE_MC/MC_lattic.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/jollactic/SM_and_MC_course/blob/main/CE_MC/MC_lattic.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
