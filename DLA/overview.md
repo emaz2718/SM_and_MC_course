@@ -5,10 +5,13 @@ The generated model is based on the Eden model, whose initial state starts from 
 
 ![image](https://github.com/emaz2718/SM_and_MC_course/assets/151519476/d3693459-8c80-4a64-9697-1262d41b9e20)
 
-Information about the particle distribution is then obtained from the density correlation function. The density is defined to be 1 for occupied sites and 0 otherwise. By measuring the correlation funcion, which would be dependent on the density and the distance between two sites:
+Information about the particle distribution is then obtained from the density correlation function. The density is defined to be 1 for occupied sites and 0 otherwise. By measuring the correlation funcion, which would be dependent on the density and the distance between two sites. C(r) can then be used as a measure to determine the accuracy of the computational studies, through a Koch curve. 
 
 $C(r)≡N^{-1}∑ρ(r')ρ(r'+r)$
 
+The outcome of the model suggests that the aggregates are "critical" objects which have scale-independent correlations over a large distance. However, the critical correlations present do not arise from an equilibrium ensemble, but from an irreversible growth process. So, a substance diffuses from infinity to an absorbing surface. Its density would be constant on the surface and zero at infinity. The rate of growth of the surface at a distance r would be proportional to the flux density.
+
+Additionally, in the study previously done by Langer and Muller-Krumbhaar it was found that a smooth interface is unstable against wrinkling at all length scales, whereby its growth would depend on the fluctuations in the diffusing field. This study desribes where the fluctuations would be dominant. 
 
 
 ## The Eden Model
@@ -17,13 +20,6 @@ This is the simplest model for the formation of aggregates. It describes how par
 ## The approach of Forrest and Witten
 The group of aggregates studied by Forest and Witter were shown to have density correlations of a power-law form. The aggreates were formed when a metal vapour of a heated plated filament was quench condensed.The metal particles condensed near the filament and diffused outwards. The particles coalesced into thin spherical shells which then drifted onto the microscopic slide. The aggregates on the slide were of the order of $10^{5}$ metal particles in a low-density mass. 
 
-The coalescence of the particles into the aggregate structures was noted to be irreversible. Since they were observed to maintain their wispy shapes even after they wouls have moved through the gas.
+The coalescence of the particles into the aggregate structures was noted to be irreversible. Since they were observed to maintain their wispy shapes even after they would have moved through the gas.
 
-### Fractals
-
-Simple definition of fractal dimension. Examples Koch curve, Sirpinsky trianlgles etc...
-Box counting algorithm and simple example.
-
-
-## Colab tutorial
 
