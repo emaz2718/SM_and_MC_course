@@ -45,10 +45,10 @@ Where (M N) is a binomial coefficient, representing the number of possible ways 
 
 $(M  N) = M!/[N!(M-N)!]$
 
-Therefore through the stirling approximation we can then have:
+Therefore through the stirling approximation we can obtain a logarithmic expression for equation (ii). As the stirlig approximation allows for the factorial to be simplified. So, then we have:
 
-$lnQ = MlnM - M - (NlnN - N) - [(M - N)ln(M - N)-(M - N)] + Nlnq$
-$lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq$                               ...equation(iii)
+$lnQ = MlnM - M - (NlnN - N) - [(M - N)ln(M - N)-(M - N)] + Nlnq(T)$
+$lnQ = MlnM - NlnN - (M - N)ln(M - N) + Nlnq(T)$                               ...equation(iii)
 
 
 ### Configurational entropy of an ideal lattice gas
@@ -59,7 +59,7 @@ Hence, the combinatorial term will be:
 $S_{config} = kln(M   N)$
 
 $S_{config} = k(MlnM - M - (NlnN - N) - [(M - N)ln(M - N) - (M - N)])$
-$S_{config} = l(MlnM - NlnN - (M - N)ln(M - N))$
+$S_{config} = k(MlnM - NlnN - (M - N)ln(M - N))$
 
 The interaction term will be:
 
